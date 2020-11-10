@@ -1660,7 +1660,7 @@ class TNavigator(object):
     def right(self, angle):
         """Turn turtle right by angle units.
 
-        Aliases: right | rt
+        Aliases: right | rt | clockwise | cw
 
         Argument:
         angle -- a number (integer or float)
@@ -1681,7 +1681,7 @@ class TNavigator(object):
     def left(self, angle):
         """Turn turtle left by angle units.
 
-        Aliases: left | lt
+        Aliases: left | lt | anticlockwise | acw
 
         Argument:
         angle -- a number (integer or float)
@@ -2017,6 +2017,12 @@ class TNavigator(object):
     setpos = goto
     setposition = goto
     seth = setheading
+    # clockwise rotation
+    clockwise = right
+    cw = right  
+    # anti-clockwise rotation
+    anticlockwise = left
+    acw = left
 
 
 class TPen(object):
